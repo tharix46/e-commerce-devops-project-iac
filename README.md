@@ -23,7 +23,8 @@ This repository contains **Terraform code** to provision **AWS infrastructure** 
 ├── .terraform/
 ├── .terraform-version
 ├── .terraform.lock.hcl
-├── dev.backend.hcl
+├── backend.hcl
+├── terraform.tfvars
 ├── local.tf
 ├── main.tf
 ├── modules
@@ -64,7 +65,7 @@ This project provisions the following AWS resources:
 ### Terraform Commands Used
 
 ```bash
-tf init -backend-config="dev.backend.hcl"
+tf init -backend-config="backend.hcl"
 
 tf fmt
 
